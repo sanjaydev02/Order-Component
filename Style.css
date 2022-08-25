@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --bright-blue-hover: hsl(244, 83%, 68%);
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Red Hat Display", sans-serif;
+    background-image: url(../img/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--pale-blue);
+   
+}
+
+.card {
+    width: 450px;
+    background-color: white;
+    color: var(--desaturated-blue);
+    border-radius: 12px;
+    overflow:hidden;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   margin: 50px auto
+   
+}
+.container{
+    padding: 30px;
+    
+}
+.hero {
+    width: 100%;
+}
+.title{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+   padding: 30px;
+   color: var(--dark-blue);
+   
+}
+.card-description{
+    line-height: 25px;
+}
+.plain-container{
+    padding: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+    background-color: var(--very-pale-blue);
+    border-radius: 12px;
+    margin: 50px auto;
+    align-items: center;
+}
+.plan-description {
+    margin-right: 75px;
+    line-height: 20px;
+  }
+  .plain-discription strong{
+    color: var(--dark-blue);
+  }
+ .plain-container a:hover{
+    text-decoration: none;
+    color: black;
+ }
+  
+button{
+    border-radius: 12px;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.Proceed-btn{
+     margin-bottom: 10px;
+     border: none;
+     color: white;
+     font-size: 17px;
+     font-weight: bold;
+     background-color: var( --bright-blue);
+    box-shadow: 0 20px 30px -8px rgb(197 189 245);
+}
+
+.cancel-btn:hover{
+    color:black
+}
+.Proceed-btn:hover{
+    background-color: var(--bright-blue-hover);
+
+}
+.cancel-btn{
+    border: none;
+    background-color: white;
+    color: var(--desaturated-blue);
+    margin-top: 22px;
+}
